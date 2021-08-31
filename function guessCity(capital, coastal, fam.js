@@ -14,3 +14,45 @@ Acre is coastal and ancient
 Katzrin is ancient
 Zikim is coastal
 Musmus is not any of the above*/
+function main()
+{
+const formula1Champions = [
+    "Schumacher",
+    "Schumacher",
+    "Schumacher",
+    "Schumacher",
+    "Schumacher",
+    "Alonso",
+    "Alonso",
+    "Räikkönen",
+    "Hamilton",
+    "Button",
+    "Vettel",
+    "Vettel",
+    "Vettel",
+    "Vettel",
+    "Hamilton",
+    "Hamilton",
+    "Rosberg",
+    "Hamilton",
+    "Hamilton",
+    "Hamilton",
+    "Hamilton"
+]
+let winners = formula1Champions.forEach(countWin);
+
+}
+function countWin(driver) 
+{
+    // your code goes here
+    let sum = 0;
+    for(let i = 0; i < formula1Champions.length; i++)
+        {
+            if(driver === formula1Champions[i])
+            {
+                sum++;
+            }
+        }
+        return sum;
+}
+
